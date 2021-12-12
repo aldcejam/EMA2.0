@@ -1,0 +1,125 @@
+@import "/cs/main.css";
+
+/* ============================== Container (TItle,Inputs) ============================== */
+.contactar {
+  width: 80vw;
+  max-width: 200px;
+  height: 40vh;
+  /* === */
+  background-image: linear-gradient(
+    var(--default-gradientUp-color),
+    var(--default-gradientDown-color)
+  );
+  /* === */
+  position: absolute;
+  z-index: 2;
+  /* === */
+  top: 20vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* === */
+  box-sizing: content-box;
+  padding: 10%;
+  /* === */
+  border: 1px solid var(--default-contrast-color);
+  border-end-end-radius: 20%;
+}
+/* ================= Title ================= */
+.contactar__title {
+  color: var(--default-color-title);
+  font-size: var(--default-size300-title);
+  float: right;
+  margin-right: 15%;
+}
+
+/* ================= Inputa ================= */
+.inputs__input {
+  height: 5vh;
+  /* === */
+  margin: 2% 0;
+  /* === */
+  border: 0;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 2%;
+  padding: 0 25px;
+}
+.inputs__input::placeholder {
+  position: absolute;
+  top: 35%;
+  left: 25px;
+}
+
+.input--big {
+  width: 90%;
+}
+.input--small {
+  width: 75%;
+}
+.inputs__inputNome {
+  background-image: url(/img-icons/user.svg);
+  background-size: 12%;
+}
+.inputs__inputEmail {
+  background-image: url(/img-icons/envelope-edit.svg);
+  background-size: 15%;
+}
+.inputs__inputAssunto {
+  background-image: url(/img-icons/envelope-edit.svg);
+  background-size: 15%;
+}
+.inputs__inputMensagem {
+  height: 12vh;
+  background-image: url(/img-icons/co\mment-alt-lines.svg);
+  background-size: 12%;
+  background-position-y: 45%;
+}
+.inputs__inputButton {
+  margin-left: 25%;
+  width: 35%;
+  border: 0;
+  border-radius: 20px;
+  color: var(--default-contrast-color);
+  padding: 2px;
+  font-size: 80%;
+}
+
+.illustration {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.illustration__image {
+  width: 100%;
+  max-height: 60vh;
+}
+
+@media (min-width: 700px) {
+  .contactar {
+    /* === */
+    left: 10%;
+    right: initial;
+    /* === */
+    padding: 60px 80px;
+    /* === */
+  }
+}
+@media (min-width: 1100px) {
+  .illustration {
+    width: 50%;
+    position: absolute;
+    bottom: initial;
+    top: 25vh;
+    left: initial;
+    right: 2%;
+  }
+  .illustration__image {
+    width: 100%;
+    max-height: 60vh;
+  }
+}

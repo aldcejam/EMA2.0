@@ -52,12 +52,12 @@
   width: 80%;
   min-width: 220px;
   height: 37%;
-  min-height: 140px;
+  min-height: 180px;
   /* ^^^^^ size ^^^^^ */
   /* === */
   background-image: linear-gradient(
-    var(--default-background60-color),
-    var(--default-background30-color)
+    var(--default-gradientUp-color),
+    var(--default-gradientDown-color)
   );
   /* === */
   display: flex;
@@ -68,17 +68,21 @@
   right: 0ch;
   bottom: 5px;
   /* === */
-  border: 1px solid var(--default-background30-color);
+  border: 1px solid var(--default-contrast-color);
   border-radius: 10px;
   /* === */
   margin: 10px auto;
-  padding: 10px;
+  padding: 10px 0px;
+}
+.container__carousel:nth-child(1) {
+  margin-bottom: 10px;
 }
 
 .container__carousel {
   position: relative;
   width: 70%;
-  height: 33%;
+  height: 45%;
+  min-height: 75px;
   margin: 0 auto;
   padding: 10px 20px;
   border: var(--default-contrast-color) solid 1px;

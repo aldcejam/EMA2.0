@@ -6,7 +6,9 @@
     --default-background60-color: #740696;
     --default-background30-color: #4D0463;
     --default-contrast-color: #FB0E9C;
-
+    /* ====== degrade ====== */
+    --default-gradientUp-color: hsla(286, 92%, 31%, 0.6);
+    --default-gradientDown-color: hsla(286, 92%, 20%, 0.6);
     /* ====== Header background ====== */
     --default-header:#1f0029ce;
 
@@ -19,9 +21,9 @@
     
     --default-color-title: #ffffff;
     --default-weight-title: 400;
-    --default-size300-title: 1rem;
-    --default-size700-title: 1.2rem;
-    --default-size1000-title: 1.4rem;
+    --default-size300-title: 1.4rem;
+    --default-size700-title: 1.6rem;
+    --default-size1000-title: 1.8rem;
     --default-color-subTitle: rgb(202, 202, 202);
     --default-weight-subTitle: 20;
     --default-color-text: rgb(216, 216, 216);
