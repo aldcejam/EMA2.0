@@ -2,12 +2,12 @@
 <html lang="pt-br">
 
 <head>
+    <title>EMA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contato.style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="login.style.css">
 </head>
 
 <body>
@@ -27,41 +27,44 @@
                 <nav class="header__options">
                     <ul class="options__list">
                         <li class="list__unity">
-                            <a href="/home/home.html" class="unity__link"><i class="uil uil-estate unity--icon"></i> HOME</a>
+                            <a href="/home/home.html" class="unity__link"><i class="uil uil-estate unity--icon"></i>
+                                HOME</a>
                         </li>
                         <li class="list__unity">
-                            <a href="/Sobre/sobre.html" class="unity__link"><i class="uil uil-notes unity--icon"></i> SOBRE</a>
+                            <a href="/Sobre/sobre.html" class="unity__link"><i class="uil uil-notes unity--icon"></i>
+                                SOBRE</a>
                         </li>
                         <li class="list__unity">
-                            <a href="#" class="unity__link"><i class="uil uil-comments-alt unity--icon"></i> CONTATO</a>
+                            <a href="/contato/contato.html" class="unity__link"><i
+                                    class="uil uil-comments-alt unity--icon"></i> CONTATO</a>
                         </li>
                         <li class="list__unity">
-                            <a href="/login/login.html" class="unity__link"><i class="uil uil-signin unity--icon"></i> LOGIN</a>
+                            <a href="#" class="unity__link"><i class="uil uil-signin unity--icon"></i> LOGIN</a>
                         </li>
                     </ul>
                 </nav>
             </header>
         </div>
         <div class="contactar">
-            <h3 class="contactar__title">Contactar</h3>
+            <h3 class="contactar__title">Login</h3>
             <div class="login__inputs">
-                <input class="inputs__inputNome inputs__input input--big" type="text" name="login__inputText" placeholder="Text" id="">
-                <br>
-                <input class="inputs__inputEmail inputs__input input--small" type="email" name="login__inputEmail" placeholder="Email" id="">
-                <br>
-                <input class="inputs__inputAssunto inputs__input input--small" type="text" name="login__inputAssunto" placeholder="Assunto" id="">
-                <br>
-                <input class="inputs__inputMensagem inputs__input input--big" type="text" name="login__inputMensagem" placeholder="Mensagem" id="">
-                <br>
-                <input class="inputs__inputButton" type="button" value="Enviar">
+                <input class="inputs__inputNome inputs__input" type="text" name="login__inputText"
+                    placeholder="Matrícula" id="">
+
+                <input class="inputs__inputAssunto inputs__input" type="text" name="login__inputAssunto"
+                    placeholder="Assunto" id="">
+                
+                <div class="inputs__buttons">
+                    <input class="buttons__inputButton" type="button" value="Entrar">
+                    <input class="buttons__inputButton" type="button" value="Cadastrar">
+                </div>
             </div>
         </div>
         <div class="illustration">
-            <img class="illustration__image" src="/img-illustration/illustration.svg" alt="">
+            <img class="illustration__image" src="/img-illustration/undraw_education_f8ru.svg" alt="">
         </div>
 
-    </div>
-    <script src="/js/menuBurguer.js"></script>
+        <script src="/js/menuBurguer.js"></script>
 </body>
 
 </html>

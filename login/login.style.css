@@ -5,7 +5,6 @@
   width: 80vw;
   max-width: 200px;
   height: 40vh;
-  max-height: 330px;
   /* === */
   background-image: linear-gradient(
     var(--default-gradientUp-color),
@@ -29,62 +28,55 @@
 /* ================= Title ================= */
 .contactar__title {
   color: var(--default-color-title);
-  font-size: var(--default-size300-title);
+  font-size: calc(var(--default-size300-title) + 0.4rem);
   float: right;
   margin-right: 15%;
+  margin-bottom: 5px;
 }
 
 /* ================= Inputa ================= */
 .inputs__input {
-  height: 5vh;
-  max-height: 50px;
+  width: 90%;
+  height: 7vh;
   /* === */
-  margin: 2% 0;
+  margin: 3% 0;
+  padding: 0 25px;
   /* === */
   border: 0;
   border-radius: 20px;
-  background-repeat: no-repeat;
+  /* === */
   background-position-y: 50%;
+  background-size: 12%;
+  background-repeat: no-repeat;
   background-position-x: 2%;
-  padding: 0 25px;
 }
 .inputs__input::placeholder {
   position: absolute;
   top: 35%;
-  left: 25px;
 }
 
-.input--big {
-  width: 90%;
-}
-.input--small {
-  width: 75%;
-}
 .inputs__inputNome {
   background-image: url(/img-icons/user.svg);
-  background-size: 12%;
-}
-.inputs__inputEmail {
-  background-image: url(/img-icons/envelope-edit.svg);
-  background-size: 15%;
 }
 .inputs__inputAssunto {
   background-image: url(/img-icons/envelope-edit.svg);
-  background-size: 15%;
 }
-.inputs__inputMensagem {
-  height: 12vh;
-  background-image: url(/img-icons/co\mment-alt-lines.svg);
-  background-size: 12%;
-  background-position-y: 45%;
+.inputs__buttons {
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  margin-top: 3%;
+  padding-left: 15px;
 }
-.inputs__inputButton {
-  margin-left: 25%;
-  width: 35%;
+.buttons__inputButton {
+  height: 4vh;
+  max-height: 40px;
+  width: 38%;
+  background-color: white;
   border: 0;
   border-radius: 20px;
-  color: var(--default-contrast-color);
   padding: 2px;
+  color: var(--default-contrast-color);
   font-size: 80%;
 }
 
@@ -107,11 +99,11 @@
     left: 10%;
     right: initial;
     /* === */
-    padding: 60px 80px;
+    padding: 60px 60px;
     /* === */
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .illustration {
     width: 50%;
     position: absolute;
@@ -122,6 +114,6 @@
   }
   .illustration__image {
     width: 100%;
-    max-height: 60vh;
+    max-height: 50vh;
   }
 }
